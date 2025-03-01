@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "../lib/utils";
 // import { Geist, Geist_Mono } from "next/font/google";
@@ -15,14 +15,14 @@ import { cn } from "../lib/utils";
 // });
 
 const helvetica = localFont({
-  display: 'swap',
+  display: "swap",
   src: [
     {
-      path: '../../public/fonts/HelveticaNeueLight.otf',
+      path: "../../public/fonts/HelveticaNeueLight.otf",
     },
   ],
-  variable: '--font-helvetica',
-})
+  variable: "--font-helvetica",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,8 +38,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        // className="min-h-screen antialiased font-Helvetica"
-        className={cn('min-h-screen antialiased font-helvetica', helvetica.className)}
+        className={cn(
+          "min-h-screen antialiased font-helvetica",
+          helvetica.className
+        )}
       >
         {children}
       </body>
