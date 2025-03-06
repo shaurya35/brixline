@@ -1,27 +1,25 @@
 import Image from "next/image";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="h-[71px] max-w-sm w-full rounded-xl bg-white/20 border border-white/20 backdrop-blur-lg shadow-2xl flex justify-center items-center gap-4">
-      <div className="cursor-pointer">
-        <Image
-          src="svg/hamburger.svg"
-          alt="right-arrow"
-          width={24}
-          height={24}
-          className="max-w-6 w-full h-6"
-        />
+    <nav className="w-full bg-transparent text-white">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between h-[103px] px-6">
+        <div className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight tracking-wide cursor-pointer">
+          Brix
+        </div>
+        <button className="flex items-center border rounded-xl border-white py-3 px-4 lg:py-4 sm:px-6 gap-2.5 cursor-pointer">
+          <div className="text-lg">BUILD WITH US</div>
+          <Image
+            src="/svg/right-arrow.svg"
+            alt="right-arrow"
+            width={15}
+            height={17}
+            className="w-4 h-4"
+          />
+        </button>
       </div>
-      <div className="w-28 sm:w-44">
-        <Image
-          src="svg/brix-logo.svg"
-          alt="right-arrow"
-          width={24}
-          height={24}
-          className="max-w-12 w-full h-12"
-        />
-      </div>
-      <button className="bg-white max-w-28 w-full h-10 rounded-lg text-xs sm:text-xs font-semibold leading-3.5 cursor-pointer uppercase tracking-wide shadow-sm hover:shadow-md transition-shadow text-center">Contact Us</button>
     </nav>
   );
-}
+};
+
+export default Navbar;
