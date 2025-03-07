@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Form = () => {
   return (
-    <div className="flex items-center justify-center bg-inherit">
+    <div className="w-full md:w-96 lg:w-full flex items-center justify-center bg-inherit">
       <div className="w-full max-w-md bg-white py-6 px-4 rounded-2xl shadow-lg">
         <h3 className="text-center text-gray-500 text-sm font-medium">
           FREE CONSULTATION
