@@ -1,9 +1,45 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Navbar from "@/components/main/Navbar";
 import Form from "@/components/main/Form";
 import Image from "next/image";
+import TestimonialCard from "@/components/section/TestimonialCard";
 
 export default function Home() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const faqData = [
+    {
+      question: "How long does it take to build a house?",
+      answer:
+        "The construction timeline typically ranges between 6-12 months depending on the size and complexity of the project. Our team provides a detailed schedule before starting construction.",
+    },
+    {
+      question: "Can I track the progress of my construction?",
+      answer:
+        "Yes, we provide regular updates through our client portal with photos, videos, and progress reports. You can also schedule site visits with our project manager.",
+    },
+    {
+      question: "Can I track the progress of my construction?",
+      answer:
+        "Yes, we provide regular updates through our client portal with photos, videos, and progress reports. You can also schedule site visits with our project manager.",
+    },
+    {
+      question: "How long does it take to build a house?",
+      answer:
+        "The construction timeline typically ranges between 6-12 months depending on the size and complexity of the project. Our team provides a detailed schedule before starting construction.",
+    },
+    {
+      question: "How long does it take to build a house?",
+      answer:
+        "The construction timeline typically ranges between 6-12 months depending on the size and complexity of the project. Our team provides a detailed schedule before starting construction.",
+    },
+  ];
+
   return (
     <>
       <header className="relative h-[574px] md:h-[817px] w-full bg-[url('/main-image-dark.png')] bg-cover bg-left">
@@ -164,7 +200,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between pt-10 md:pt-20 pb-20">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-10 md:pt-20">
           <div className="text-center md:text-left md:w-2/5 p-0 md:p-10">
             <div className="text-sm md:text-md font-bold text-[#7445B2] pt-16">
               OUR PHILOSOPHY
@@ -172,7 +208,7 @@ export default function Home() {
             <div className="text-2xl md:text-4xl font-black md:font-thin pt-1 md:pt-4">
               Brixline&apos;s Zero Policy
             </div>
-            <div className="text-sm font-thin p-2 md:pt-4 text-black/60">
+            <div className="text-sm font-thin pt-3 md:pt-4 text-black/60">
               We Believe your dream home deserves{" "}
               <br className="hidden md:block" /> nothing less than perfection.
               That&apos;s why <br className="hidden md:block" /> we&apos;ve
@@ -192,9 +228,9 @@ export default function Home() {
                 <div className="text-thin font-black md:text-bold md:text-base text-left md:text-center">
                   Zero Delay Tolerancy
                 </div>
-                <div className="text-sm  text-left md:text-center text-black/60 pt-0 md:pt-1">
-                  Your Home, Delivered On Time, Or We <br /> Pay You A Penalty, No
-                  Excuses.
+                <div className="text-sm text-left md:text-center text-black/60 pt-0 md:pt-1">
+                  Your Home, Delivered On Time, Or We <br /> Pay You A Penalty,
+                  No Excuses.
                 </div>
               </div>
             </div>
@@ -211,7 +247,8 @@ export default function Home() {
                   Zero Cost Overruns
                 </div>
                 <div className="text-sm text-left md:text-center text-black/60 pt-0 md:pt-1">
-                  Transparent Pricing Ensures You Pay <br /> Only What Was Agreed Upon.
+                  Transparent Pricing Ensures You Pay <br /> Only What Was
+                  Agreed Upon.
                 </div>
               </div>
             </div>
@@ -228,7 +265,8 @@ export default function Home() {
                   Zero Quality Issues
                 </div>
                 <div className="text-sm  text-left md:text-center text-black/60 pt-0 md:pt-1">
-                  7-Stage Quality Checks And 400+ <br /> Tests Guarantee Perfection
+                  7-Stage Quality Checks And 400+ <br /> Tests Guarantee
+                  Perfection
                 </div>
               </div>
             </div>
@@ -239,16 +277,460 @@ export default function Home() {
                 width={48}
                 height={48}
                 className="w-9 h-9 md:w-12 md:h-12"
-              /> 
+              />
               <div>
                 <div className="text-thin font-black md:text-bold md:text-base text-left md:text-center">
                   Zero Cost EMI
                 </div>
                 <div className="text-sm text-left md:text-center text-black/60 pt-0 md:pt-1">
-                  Start Building Today With Zero EMI <br /> During The Construction
-                  Phase
+                  Start Building Today With Zero EMI <br /> During The
+                  Construction Phase
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center md:justify-start items-center flex-row flex-wrap md:flex-nowrap gap-5 lg:gap-7 pt-20">
+          <div className="flex justify-start items-center flex-col gap-5 bg-[#F9F9F9] h-453px w-[333px] md:h-[600px] md:w-[558px] px-5 py-9 md:px-5 md:py-10 text-black rounded-2xl">
+            <div className="text-[#17161680] text-xs md:text-sm md:text-md font-bold text-center">
+              TECHNOLOGY
+            </div>
+            <div className="text-center text-xl md:text-3xl font-normal leading-tight">
+              We construct your dream home. <br /> You track progress on app.
+            </div>
+            <div className="text-black/60 text-center text-xs md:text-lg font-normal leading-snug">
+              Track house construction project progress, raise queries, <br />{" "}
+              view inspection reports and more.
+            </div>
+            <button className="flex justify-center items-center gap-2 border border-[#D7D8E0] px-3.5 py-2 rounded-md cursor-pointer">
+              GET STARTED
+              <Image
+                src="/svg/vector-logo.svg"
+                alt="vector-logo"
+                width={12}
+                height={12}
+                className="w-2.5 h-2.5 md:w-3 md:h-3"
+              />
+            </button>
+          </div>
+          <div className="bg-black flex justify-start items-center flex-col gap-5 h-453px w-[333px] md:h-[600px] md:w-[558px] px-5 py-9 md:px-5 md:py-10 text-white rounded-2xl">
+            <div className="text-[#DADBE4] text-xs md:text-sm md:text-md font-bold text-center">
+              FINANCE
+            </div>
+            <div className="text-white text-center text-xl md:text-3xl font-normal leading-tight">
+              Build now pay later - start <br /> today, Pay when you&apos;re
+              ready!
+            </div>
+            <div className="text-white/60 text-center text-xs md:text-lg font-normal leading-snug">
+              Take a step towards your dream home with our, Build <br /> Now Pay
+              Later Program
+            </div>
+            <button className="flex justify-center items-center gap-2 border border-white/50 px-3.5 py-2 rounded-md cursor-pointer">
+              GET STARTED
+              <Image
+                src="/svg/vector-logo.svg"
+                alt="vector-logo"
+                width={12}
+                height={12}
+                className="w-2.5 h-2.5 md:w-3 md:h-3 text-white"
+                style={{ filter: "brightness(0) invert(1)" }}
+              />
+            </button>
+          </div>
+        </div>
+        <div className="pt-20">
+          <div className="text-sm md:text-md font-bold text-[#7445B2] text-center">
+            TESTIMONIALS
+          </div>
+          <div className="text-2xl md:text-4xl font-semibold md:font-thin text-center pt-1 md:pt-3">
+            We&apos;ll let our clients do <br />
+            the talking
+          </div>
+
+          <div className="mt-2 md:mt-12 overflow-hidden relative">
+            <div className="flex animate-infinite-scroll gap-3 md:gap-6 w-max">
+              {[1, 2, 3].map((i) => (
+                <TestimonialCard key={i} />
+              ))}
+
+              {[1, 2, 3].map((i) => (
+                <TestimonialCard key={`clone-${i}`} />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="pt-20">
+          <div className="text-sm md:text-md font-bold text-[#7445B2] text-center">
+            FAQ&apos;S
+          </div>
+          <div className="text-2xl md:text-4xl font-semibold md:font-thin text-center pt-1 md:pt-3 ">
+            Got Questions? We&apos;ve got <br /> Answers
+          </div>
+
+          <div className="max-w-4xl mx-auto mt-8 px-2 md:px-32">
+            {faqData.map((item, index) => (
+              <div
+                key={index}
+                className="border-b border-gray-100 last:border-0 py-4"
+              >
+                <div
+                  className="flex justify-between items-center cursor-pointer"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  <h3 className="text-md md:text-lg font-bold md:font-medium">
+                    {item.question}
+                  </h3>
+                  <button className="text-2xl text-[#7445B2]">
+                    {activeIndex === index ? (
+                      <Image
+                        src="/svg/minus-logo.svg"
+                        alt="minus-logo"
+                        width={32}
+                        height={32}
+                        className="w-6 h-6 md:w-7 md:h-7"
+                      />
+                    ) : (
+                      <Image
+                        src="/svg/plus-logo.svg"
+                        alt="plus-logo"
+                        width={32}
+                        height={32}
+                        className="w-6 h-6 md:w-7 md:h-7"
+                      />
+                    )}
+                  </button>
+                </div>
+                {activeIndex === index && (
+                  <div className="mt-4 text-sm md:text-md text-gray-600 transition-all duration-300 tracking-wide">
+                    {item.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="pt-20">
+          <div className="text-sm md:text-md font-bold text-[#7445B2] text-center">
+            OUR PARTNERS
+          </div>
+          <div className="text-2xl md:text-4xl font-semibold md:font-thin text-center pt-1 md:pt-3 ">
+            Winning collaborations that <br /> produce winning homes.
+          </div>
+          <div className="md:hidden mt-8 overflow-x-hidden">
+            <div className="flex animate-infinite-scroll-1 gap-2.5 w-max">
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/asian-paints.png"
+                  alt="asian-paints"
+                  width={110}
+                  height={62}
+                  className="w-28 h-16"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/acc.png"
+                  alt="acc"
+                  width={96}
+                  height={33}
+                  className="w-24 h-8"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/nerolac.png"
+                  alt="nerolac"
+                  width={118}
+                  height={44}
+                  className="w-28 h-11"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/jaquar.png"
+                  alt="jaquar"
+                  width={138}
+                  height={86}
+                  className="w-32 h-20"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/somany.png"
+                  alt="somany"
+                  width={138}
+                  height={36}
+                  className="w-32 h-9"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/birla-opus.png"
+                  alt="birla-opus"
+                  width={138}
+                  height={75}
+                  className="w-32 h-20"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/kohler.png"
+                  alt="kohler"
+                  width={110}
+                  height={62}
+                  className="w-28 h-16"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/tata-tiscon.png"
+                  alt="tata-tiscon"
+                  width={122}
+                  height={51}
+                  className="w-32 h-12"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/jaquar.png"
+                  alt="jaquar"
+                  width={138}
+                  height={86}
+                  className="w-32 h-9"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/birla-opus.png"
+                  alt="birla-opus"
+                  width={138}
+                  height={75}
+                  className="w-32 h-20"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/tata-tiscon.png"
+                  alt="tata-tiscon"
+                  width={122}
+                  height={51}
+                  className="w-32 h-12"
+                />
+              </div>
+            </div>
+            <div className="flex animate-infinite-scroll-2 gap-2.5 w-max pt-3">
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/asian-paints.png"
+                  alt="asian-paints"
+                  width={110}
+                  height={62}
+                  className="w-28 h-16"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/acc.png"
+                  alt="acc"
+                  width={96}
+                  height={33}
+                  className="w-24 h-8"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/nerolac.png"
+                  alt="nerolac"
+                  width={118}
+                  height={44}
+                  className="w-28 h-11"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/jaquar.png"
+                  alt="jaquar"
+                  width={138}
+                  height={86}
+                  className="w-32 h-20"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/somany.png"
+                  alt="somany"
+                  width={138}
+                  height={36}
+                  className="w-32 h-9"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/birla-opus.png"
+                  alt="birla-opus"
+                  width={138}
+                  height={75}
+                  className="w-32 h-20"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/kohler.png"
+                  alt="kohler"
+                  width={110}
+                  height={62}
+                  className="w-28 h-16"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/tata-tiscon.png"
+                  alt="tata-tiscon"
+                  width={122}
+                  height={51}
+                  className="w-32 h-12"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/jaquar.png"
+                  alt="jaquar"
+                  width={138}
+                  height={86}
+                  className="w-32 h-9"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/birla-opus.png"
+                  alt="birla-opus"
+                  width={138}
+                  height={75}
+                  className="w-32 h-20"
+                />
+              </div>
+              <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+                <Image
+                  src="/brands/tata-tiscon.png"
+                  alt="tata-tiscon"
+                  width={122}
+                  height={51}
+                  className="w-32 h-12"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="hidden md:flex justify-center items-center flex-wrap gap-2.5 px-0 md:px-10 pt-10">
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/asian-paints.png"
+                alt="asian-paints"
+                width={110}
+                height={62}
+                className="w-28 h-16"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/acc.png"
+                alt="acc"
+                width={96}
+                height={33}
+                className="w-24 h-8"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/nerolac.png"
+                alt="nerolac"
+                width={118}
+                height={44}
+                className="w-28 h-11"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/jaquar.png"
+                alt="jaquar"
+                width={138}
+                height={86}
+                className="w-32 h-20"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/somany.png"
+                alt="somany"
+                width={138}
+                height={36}
+                className="w-32 h-9"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/birla-opus.png"
+                alt="birla-opus"
+                width={138}
+                height={75}
+                className="w-32 h-20"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/kohler.png"
+                alt="kohler"
+                width={110}
+                height={62}
+                className="w-28 h-16"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/tata-tiscon.png"
+                alt="tata-tiscon"
+                width={122}
+                height={51}
+                className="w-32 h-12"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/jaquar.png"
+                alt="jaquar"
+                width={138}
+                height={86}
+                className="w-32 h-9"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/birla-opus.png"
+                alt="birla-opus"
+                width={138}
+                height={75}
+                className="w-32 h-20"
+              />
+            </div>
+            <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
+              <Image
+                src="/brands/tata-tiscon.png"
+                alt="tata-tiscon"
+                width={122}
+                height={51}
+                className="w-32 h-12"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="pt-12 md:pt-20 pb-20">
+          <div className="py-20 bg-[#F9F9F9]">
+            <div className="text-sm md:text-md font-bold text-[#7445B2] text-center">
+              OUR COMMITMENT
+            </div>
+            <div className="text-2xl md:text-4xl font-semibold md:font-thin text-center pt-1 md:pt-3 ">
+              Only Pay Us, If We Deliver On <br /> time.{" "}
+              <span className="font-black"> Else Don&apos;t</span>
             </div>
           </div>
         </div>
