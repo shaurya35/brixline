@@ -496,7 +496,7 @@ export default function Home() {
                   alt="jaquar"
                   width={138}
                   height={86}
-                  className="w-32 h-9"
+                  className="w-32 h-20"
                 />
               </div>
               <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
@@ -723,7 +723,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pt-12 md:pt-20 pb-20">
+        <div className="pt-12 md:pt-20">
           <div className="py-20 bg-[#F9F9F9]">
             <div className="text-sm md:text-md font-bold text-[#7445B2] text-center">
               OUR COMMITMENT
@@ -732,9 +732,130 @@ export default function Home() {
               Only Pay Us, If We Deliver On <br /> time.{" "}
               <span className="font-black"> Else Don&apos;t</span>
             </div>
+            <div className="flex items-center justify-center pt-10 md:pt-12">
+              <div className="inline-grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="flex flex-row justify-center gap-2 items-center text-lg font-normal">
+                  <Image
+                    src="/svg/tick-logo.svg"
+                    alt="tick-logo"
+                    width={20}
+                    height={14}
+                    className="w-5 h-3.5"
+                  />
+                  100% On-Time Delivery Guarantee
+                </div>
+                <div className="flex flex-row justify-center gap-1 items-center text-lg font-normal">
+                  <Image
+                    src="/svg/tick-logo.svg"
+                    alt="tick-logo"
+                    width={20}
+                    height={14}
+                    className="w-5 h-3.5"
+                  />
+                  10 Year Structural Damage Warranty
+                </div>
+                <div className="flex flex-row justify-center gap-1 items-center text-lg font-normal">
+                  <Image
+                    src="/svg/tick-logo.svg"
+                    alt="tick-logo"
+                    width={20}
+                    height={14}
+                    className="w-5 h-3.5"
+                  />
+                  1 Year On-Site Damage Warranty
+                </div>
+                <div className="flex flex-row justify-center gap-1 items-center text-lg font-normal">
+                  <Image
+                    src="/svg/tick-logo.svg"
+                    alt="tick-logo"
+                    width={20}
+                    height={14}
+                    className="w-5 h-3.5"
+                  />
+                  Build Now - Pay Later Facility
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center items-center pt-10">
+              <button className="bg-black flex justify-center items-center border rounded-2xl border-white py-3 px-4 lg:py-3 sm:px-3 gap-2 cursor-pointer">
+                <div className="text-sm md:text-md text-white">
+                  BOOK CONSULTATION
+                </div>
+                <Image
+                  src="/svg/right-arrow.svg"
+                  alt="right-arrow"
+                  width={10}
+                  height={10}
+                  className="w-4 h-4"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </section>
+      <footer className="flex flex-col items-center pt-10 md:pt-20 pb-20">
+        <div className="w-full max-w-5xl border-b border-black/10 pb-12">
+          <p className="text-lg text-center">Or Call Our Experts Directly @</p>
+          <div className="flex justify-center items-center gap-2 pt-2">
+            <Image
+              src="/svg/telephone-logo.svg"
+              alt="telephone-logo"
+              width={32}
+              height={32}
+              className="w-7 h-7"
+            />
+            <p className="text-[#7445B2] text-2xl font-black">1800-008-2000</p>
+          </div>
+        </div>
+        <div className="pt-10 w-full max-w-5xl border-b border-black/10 pb-12">
+          <p className="text-center">Follow Our Journey On:</p>
+          <div className="flex justify-center items-center gap-6 md:gap-5 pt-5">
+            <Image
+              src="/svg/facebook-logo.svg"
+              alt="facebook-logo"
+              width={30}
+              height={30}
+              className="w-7 h-7 opacity-40"
+            />
+            <Image
+              src="/svg/instagram-logo.svg"
+              alt="instagram-logo"
+              width={30}
+              height={30}
+              className="w-7 h-7 opacity-40"
+            />
+            <Image
+              src="/svg/twitter-logo.svg"
+              alt="twitter-logo"
+              width={30}
+              height={30}
+              className="w-7 h-7 opacity-40"
+            />
+            <Image
+              src="/svg/linkedin-logo.svg"
+              alt="linkedin-logo"
+              width={30}
+              height={30}
+              className="w-7 h-7 opacity-40"
+            />
+            <Image
+              src="/svg/youtube-logo.svg"
+              alt="youtube-logo"
+              width={30}
+              height={30}
+              className="w-7 h-7 opacity-40"
+            />
+          </div>
+        </div>
+        <div className="pt-10 pb-4">
+          <p className="text-center">
+            WITH LOVE 🩷, FROM BEAUTIFUL <span>INDIA</span>
+          </p>
+          <div className="text-center text-7xl md:text-9xl text-black/10 font-black pt-3">
+            BRIXLINE
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
