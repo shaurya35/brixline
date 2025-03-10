@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="relative h-[574px] md:h-[817px] w-full bg-[url('/main-image-dark.png')] bg-cover bg-left">
+      <header className="relative h-[574px] md:h-[817px] w-full bg-[url('/main-image-dark.png')] bg-cover bg-left tracking-wide">
         <div className="absolute inset-0 bg-black/20"></div>
         <Navbar />
         <div className="max-w-screen-xl mx-auto px-6">
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section className="max-w-screen-xl mx-auto px-6 pt-[350px] sm:pt-[480px] md:pt-12">
+      <section className="max-w-screen-xl mx-auto px-6 pt-[350px] sm:pt-[480px] md:pt-12 tracking-wide">
         <div>
           <div className="text-sm md:text-md font-bold text-[#7445B2] text-center">
             OUR FEATURES
@@ -793,7 +793,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="flex flex-col items-center pt-10 md:pt-20 pb-20">
+      <footer className="flex flex-col items-center pt-10 md:pt-20 pb-20 tracking-wide">
         <div className="w-full max-w-5xl border-b border-black/10 pb-12">
           <p className="text-lg text-center">Or Call Our Experts Directly @</p>
           <div className="flex justify-center items-center gap-2 pt-2">
