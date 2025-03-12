@@ -48,34 +48,34 @@ export default function Home() {
         <div className="max-w-screen-xl mx-auto px-6">
           <div className="relative flex justify-center items-center md:justify-between md:items-center flex-wrap h-[714px]">
             <div className="text-white pt-10 md:pt-0 h-[281px] sm:h-[400px]">
-              <div className="text-4xl sm:text-5xl xl:text-6xl font-black leading-11 sm:leading-15 lg:leading-20">
+              <div className="text-4xl sm:text-5xl xl:text-6xl font-black leading-11 sm:leading-15 lg:leading-16 xl:leading-20 text-center md:text-left">
                 Construct Your <br /> Dream Home Now,{" "}
                 <span className="hidden sm:block">& Pay Later</span>
                 <span className="block italic sm:hidden">You Pay us Later</span>
               </div>
-              <div className="text-md sm:text-lg xl:text-xl font-normal leading-5 sm:leading-6 lg:leading-8 opacity-60 pt-4">
+              <div className="text-md sm:text-lg md:text-md xl:text-xl font-normal leading-5 sm:leading-6 lg:leading-7 opacity-60 pt-4 px-28 md:px-0 text-center md:text-left">
                 Your Perfect Home, Designed & Built for You. Hassle-free, On-{" "}
                 <br className="hidden sm:block" /> Time, and Within Budget.
               </div>
               <div className="hidden md:flex justify-around items-center text-center pt-6">
                 <div>
-                  <div className="text-2xl font-semibold leading-7">
+                  <div className="md:text-lg xl:text-2xl font-semibold leading-7">
                     1.2 Lakh
                   </div>
-                  <div className="text-sm font-light leading-5 pt-1 opacity-75">
+                  <div className="sm:text-xs xl:text-sm font-light leading-5 pt-1 opacity-75">
                     SQ. FT. DELIVERED
                   </div>
                 </div>
                 <div className="h-10 border-r border-[#D9D9D980] opacity-50"></div>
                 <div>
-                  <div className="text-2xl font-semibold leading-7">25+</div>
-                  <div className="text-sm font-light leading-5 pt-1 opacity-75">
+                  <div className="md:text-lg xl:text-2xl font-semibold leading-7">25+</div>
+                  <div className="sm:text-xs xl:text-sm font-light leading-5 pt-1 opacity-75">
                     ONGOING PROJECTS
                   </div>
                 </div>
                 <div className="h-10 border-r border-[#D9D9D980] opacity-50"></div>
                 <div>
-                  <div className="text-2xl font-semibold leading-7">
+                  <div className="md:text-lg xl:text-2xl font-semibold leading-7">
                     ₹100Cr+
                   </div>
                   <div className="text-sm font-light leading-5 pt-1 opacity-75">
@@ -597,7 +597,7 @@ export default function Home() {
                   alt="jaquar"
                   width={138}
                   height={86}
-                  className="w-32 h-9"
+                  className="w-32 h-20"
                 />
               </div>
               <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
@@ -650,14 +650,14 @@ export default function Home() {
               />
             </div>
             <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
-              <Image
-                src="/brands/jaquar.png"
-                alt="jaquar"
-                width={138}
-                height={86}
-                className="w-32 h-20"
-              />
-            </div>
+                <Image
+                  src="/brands/jaquar.png"
+                  alt="jaquar"
+                  width={138}
+                  height={86}
+                  className="w-32 h-20"
+                />
+              </div>
             <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
               <Image
                 src="/brands/somany.png"
@@ -695,14 +695,14 @@ export default function Home() {
               />
             </div>
             <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
-              <Image
-                src="/brands/jaquar.png"
-                alt="jaquar"
-                width={138}
-                height={86}
-                className="w-32 h-9"
-              />
-            </div>
+                <Image
+                  src="/brands/jaquar.png"
+                  alt="jaquar"
+                  width={138}
+                  height={86}
+                  className="w-32 h-20"
+                />
+              </div>
             <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
               <Image
                 src="/brands/birla-opus.png"
@@ -793,7 +793,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="flex flex-col items-center pt-10 md:pt-20 pb-20 tracking-wide">
+      <footer className="flex flex-col items-center pt-10 md:pt-20 tracking-wide">
         <div className="w-full max-w-5xl border-b border-black/10 pb-12">
           <p className="text-lg text-center">Or Call Our Experts Directly @</p>
           <div className="flex justify-center items-center gap-2 pt-2">
@@ -847,11 +847,11 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="pt-10 pb-4">
+        <div className="pt-10">
           <p className="text-center">
             WITH LOVE 🩷, FROM BEAUTIFUL <span>INDIA</span>
           </p>
-          <div className="text-center text-7xl md:text-9xl text-black/10 font-black pt-3">
+          <div className="text-center text-7xl md:text-[160px] text-black/10 font-black pt-3">
             BRIXLINE
           </div>
         </div>
