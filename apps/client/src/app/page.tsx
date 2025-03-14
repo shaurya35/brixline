@@ -53,9 +53,9 @@ export default function Home() {
                 <span className="hidden sm:block">& Pay Later</span>
                 <span className="block italic sm:hidden">You Pay us Later</span>
               </div>
-              <div className="text-md sm:text-lg md:text-md xl:text-xl font-normal leading-5 sm:leading-6 lg:leading-7 opacity-60 pt-4 px-28 md:px-0 text-center md:text-left">
+              <div className="text-md sm:text-lg md:text-md xl:text-xl font-normal leading-5 sm:leading-6 lg:leading-7 opacity-60 pt-4 px-2 xs:px-10 sm:px-28 md:px-0 text-center md:text-left">
                 Your Perfect Home, Designed & Built for You. Hassle-free, On-{" "}
-                <br className="hidden sm:block" /> Time, and Within Budget.
+                <br className="hidden md:block" /> Time, and Within Budget.
               </div>
               <div className="hidden md:flex justify-around items-center text-center pt-6">
                 <div>
