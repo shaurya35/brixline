@@ -2,21 +2,21 @@ import Image from "next/image";
 
 const Form = () => {
   return (
-    <div className="w-full md:w-96 lg:w-full flex items-center justify-center bg-inherit tracking-wider">
-      <div className="w-full max-w-md bg-white/20 border border-white/20 backdrop-blur-lg shadow-2xl py-6 px-4 rounded-2xl">
-        <h3 className="text-center text-[#A9ADB7] text-sm font-bold">
+    <div className="w-full lg:w-full flex items-center justify-center bg-inherit tracking-wider">
+      <div className="w-full max-w-sm xl:max-w-md bg-[linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),linear-gradient(0deg,rgba(255,255,255,0.3),rgba(255,255,255,0.3))] border border-white/20 backdrop-blur-3xl shadow-lg mx-7 md:mx-0 py-5 px-5 2xl:py-7 2xl:px-5 rounded-2xl">
+        <h3 className="text-center text-[#A9ADB7] text-xs md:text-sm font-bold">
           FREE CONSULTATION
         </h3>
-        <h2 className="text-center text-3xl font-extralight text-white mt-2">
+        <h2 className="text-center text-2xl md:text-3xl font-extralight text-white mt-2">
           Connect with our <br /> Construction Experts
         </h2>
-        <form className="mt-4 space-y-4">
+        <form className="mt-7 space-y-4">
           <div className="relative">
             <input
               type="text"
               placeholder=""
               aria-label="First Name"
-              className="w-full p-3 pl-28 border border-[#DADBE4] rounded-md outline-none focus:ring-2 focus:ring-black bg-white"
+              className="w-full p-3 pl-28 border border-[#DADBE4] rounded-md outline-none focus:ring-2 focus:ring-[#A9ADB7] bg-white"
             />
             <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex gap-2 items-center pointer-events-none">
               <Image
@@ -36,7 +36,7 @@ const Form = () => {
               type="tel"
               placeholder=""
               aria-label="Contact Number"
-              className="w-full p-3 pl-28 border border-[#DADBE4] rounded-md outline-none focus:ring-2 focus:ring-black bg-white"
+              className="w-full p-3 pl-28 border border-[#DADBE4] rounded-md outline-none focus:ring-2 focus:ring-[#A9ADB7] bg-white"
             />
             <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex gap-2 items-center pointer-events-none">
               <Image
@@ -56,7 +56,7 @@ const Form = () => {
               type="text"
               placeholder=""
               aria-label="Location of Plot"
-              className="w-full p-3 pl-28 border border-[#DADBE4] rounded-md outline-none focus:ring-2 focus:ring-black bg-white"
+              className="w-full p-3 pl-28 border border-[#DADBE4] rounded-md outline-none focus:ring-2 focus:ring-[#A9ADB7] bg-white"
             />
             <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex gap-2 items-center pointer-events-none">
               <Image
@@ -73,7 +73,7 @@ const Form = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-black text-sm text-white py-4 rounded-md font-bold hover:bg-gray-900 transition flex justify-center items-center gap-2.5"
+            className="w-full bg-black text-sm text-white py-4 rounded-md font-bold hover:bg-gray-900 transition flex justify-center items-center gap-2.5 mt-7"
           >
             GET A FREE QUOTE
             <Image
@@ -85,7 +85,7 @@ const Form = () => {
             />
           </button>
         </form>
-        <p className="text-center font-thin text-xs text-gray-500/80 mt-3 px-9">
+        <p className="text-center font-thin text-xs text-black md:text-[#A9ADB7] mt-3 px-9">
           By proceeding, you are indicating that you have read and agree to our
           <a href="#" className="font-normal underline">
             {" "}
