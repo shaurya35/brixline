@@ -14,29 +14,32 @@ export default function Home() {
 
   const faqData = [
     {
-      question: "How long does it take to build a house?",
+      question:
+        "What is the estimated time it will take to build a full house?",
       answer:
-        "The construction timeline typically ranges between 6-12 months depending on the size and complexity of the project. Our team provides a detailed schedule before starting construction.",
+        "It takes 6 to 14 months to complete a house construction project. Generally, a 5-month period to build the first floor and 1.5 months for each one after that is the standard. However, this depends on the space, built-up area, locations, design, construction type (foundation or core), etc. You can track your project, including updates, inspection reports, payment schedules, etc., on the customer app.",
     },
     {
-      question: "Can I track the progress of my construction?",
+      question: "Do I have to pay the full amount before the project starts?",
       answer:
-        "Yes, we provide regular updates through our client portal with photos, videos, and progress reports. You can also schedule site visits with our project manager.",
+        "Payments are structured in stages based on a personalised schedule that aligns with your project's construction phases and overall cost. The process begins with an 8% booking amount, which covers the entire design phase, including soil testing, digital surveys, 2D floor plans, structural drawings, MEP drawings, and 3D elevation. <br /><br /> After the design phase is complete, the finalised plan is handed over to the project management team, and mobilisation at the site is initiated. Subsequent payments are made in stages, corresponding to specific milestones in the construction process",
     },
     {
-      question: "Can I track the progress of my construction?",
+      question:
+        "Why Choose Brix Homes over local home construction contractors ?",
       answer:
-        "Yes, we provide regular updates through our client portal with photos, videos, and progress reports. You can also schedule site visits with our project manager.",
+        "Below are some key advantages of choosing Brix Homes as your home building contractor over a local contractor: <br /><br /> With Brix Homes You Have: <br /> Verified/ certified trust <br />Written and detailed understanding <br />Price and timeline is fixed exactly before the construction starts <br />Focus is more on structure/ electrical/ plumbing compared to Interiors <br />Large team of specialists, not dependent upon one individual <br />In-house team for design, construction, approvals etc.<br /><br />With Local Contractor You Have: <br />Trust Issues <br />Partly written, partly verbal understanding <br />Price and timeline changes as construction progresses and decisions are made <br />Focus is more on interiors compared to structure/ electrical/ plumbing <br />Owner driven builder with a small team",
     },
     {
-      question: "How long does it take to build a house?",
+      question: "Why is Brix Homes one of the top home builders in Delhi NCR?",
       answer:
-        "The construction timeline typically ranges between 6-12 months depending on the size and complexity of the project. Our team provides a detailed schedule before starting construction.",
+        "We are the largest builders of custom villas, simplex-duplex and independent floors in Delhi, Gurugram, Noida, Faridabad and Ghaziabad. We have over 100+ home projects under our umbrella. We are continuing to grow at an exponential rate.",
     },
     {
-      question: "How long does it take to build a house?",
+      question:
+        "What to consider when analysing the quotation by a home builder or construction contractor?",
       answer:
-        "The construction timeline typically ranges between 6-12 months depending on the size and complexity of the project. Our team provides a detailed schedule before starting construction.",
+        "Don’t compare the cost just on the sqft rate. Check detailed Specifications. Like for Car shopping, You don't just ask the price, right? You check the engine, build, maintenance, etc. Local home Builders give you the Handoff Numbers while being silent on the specification used. We at Brix Homes give us an extensive 70+ specification document . Check out our Construction Cost Calculator to get exact cost with detailed specification.",
     },
   ];
 
@@ -68,7 +71,9 @@ export default function Home() {
                 </div>
                 <div className="h-10 border-r border-[#D9D9D980] opacity-50"></div>
                 <div>
-                  <div className="md:text-lg xl:text-2xl font-semibold leading-7">25+</div>
+                  <div className="md:text-lg xl:text-2xl font-semibold leading-7">
+                    25+
+                  </div>
                   <div className="sm:text-xs xl:text-sm font-light leading-5 pt-1 opacity-75">
                     ONGOING PROJECTS
                   </div>
@@ -312,6 +317,15 @@ export default function Home() {
                 className="w-2.5 h-2.5 md:w-3 md:h-3"
               />
             </button>
+            <div>
+              <Image
+                src="/mobiles-images.avif"
+                alt="mobiles-image"
+                width={500}
+                height={500}
+                className="w-[414px] h-[207px] md:w-[414px] md:h-[227px] xl:w-[474px] xl:h-[287px]"
+              />
+            </div>
           </div>
           <div className="bg-black flex justify-start items-center flex-col gap-5 h-453px w-[333px] md:h-[600px] md:w-[558px] px-5 py-9 md:px-5 md:py-10 text-white rounded-2xl">
             <div className="text-[#DADBE4] text-xs md:text-sm md:text-md font-bold text-center">
@@ -336,9 +350,18 @@ export default function Home() {
                 style={{ filter: "brightness(0) invert(1)" }}
               />
             </button>
+            <div>
+              <Image
+                src="/cards.avif"
+                alt="cards"
+                width={500}
+                height={500}
+                className="w-[414px] h-[227px] md:w-[414px] md:h-[227px] xl:w-[474px] xl:h-[287px]"
+              />
+            </div>
           </div>
         </div>
-        <div className="pt-20">
+        <div className="pt-20 h-inherit lg:h-[1000px] overflow-hidden">
           <div className="text-sm md:text-md font-bold text-[#7445B2] text-center">
             TESTIMONIALS
           </div>
@@ -348,14 +371,31 @@ export default function Home() {
           </div>
 
           <div className="mt-2 md:mt-12 overflow-hidden relative">
-            <div className="flex animate-infinite-scroll gap-3 md:gap-6 w-max">
-              {[1, 2, 3].map((i) => (
+            <div className="hidden lg:block pointer-events-none absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent z-10"></div>
+            <div className="hidden lg:block pointer-events-none absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent z-10"></div>
+            <div className="flex flex-row animate-infinite-scroll gap-3 md:gap-10 lg:hidden w-max">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
                 <TestimonialCard key={i} />
               ))}
+            </div>
 
-              {[1, 2, 3].map((i) => (
-                <TestimonialCard key={`clone-${i}`} />
-              ))}
+            <div className="hidden lg:flex justify-center items-center gap-10">
+              <div className="flex flex-col animate-vertical-scroll gap-3 md:gap-96">
+                {[1, 2, 3].map((i) => (
+                  <TestimonialCard key={i} />
+                ))}
+                {[1, 2, 3].map((i) => (
+                  <TestimonialCard key={`clone-${i}`} />
+                ))}
+              </div>
+              <div className="flex flex-col animate-vertical-scroll-offset gap-3 md:gap-96">
+                {[1, 2, 3].map((i) => (
+                  <TestimonialCard key={i} />
+                ))}
+                {[1, 2, 3].map((i) => (
+                  <TestimonialCard key={`clone-${i}`} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -402,7 +442,12 @@ export default function Home() {
                 </div>
                 {activeIndex === index && (
                   <div className="mt-4 text-sm md:text-md text-gray-600 transition-all duration-300 tracking-wide">
-                    {item.answer}
+                    {item.answer.split("<br />").map((text, i) => (
+                      <React.Fragment key={i}>
+                        {i > 0 && <br />}
+                        {text}
+                      </React.Fragment>
+                    ))}
                   </div>
                 )}
               </div>
@@ -650,14 +695,14 @@ export default function Home() {
               />
             </div>
             <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
-                <Image
-                  src="/brands/jaquar.png"
-                  alt="jaquar"
-                  width={138}
-                  height={86}
-                  className="w-32 h-20"
-                />
-              </div>
+              <Image
+                src="/brands/jaquar.png"
+                alt="jaquar"
+                width={138}
+                height={86}
+                className="w-32 h-20"
+              />
+            </div>
             <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
               <Image
                 src="/brands/somany.png"
@@ -695,14 +740,14 @@ export default function Home() {
               />
             </div>
             <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
-                <Image
-                  src="/brands/jaquar.png"
-                  alt="jaquar"
-                  width={138}
-                  height={86}
-                  className="w-32 h-20"
-                />
-              </div>
+              <Image
+                src="/brands/jaquar.png"
+                alt="jaquar"
+                width={138}
+                height={86}
+                className="w-32 h-20"
+              />
+            </div>
             <div className="w-[160px] h-[72px] px-2.5 py-1 border rounded-lg border-black/5 flex justify-center items-center">
               <Image
                 src="/brands/birla-opus.png"

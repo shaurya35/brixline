@@ -43,3 +43,28 @@
     animation: none;
   }
 }
+
+@keyframes vertical-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@keyframes vertical-scroll-offset {
+  0% {
+    transform: translateY(10%); 
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+.animate-vertical-scroll {
+  animation: vertical-scroll 30s linear infinite;
+}
+
+.animate-vertical-scroll-offset {
+  animation: vertical-scroll-offset 30s linear infinite;
+}
