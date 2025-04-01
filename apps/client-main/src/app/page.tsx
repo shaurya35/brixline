@@ -4,6 +4,8 @@ import FrontFacing from "@/components/section/FrontFacing";
 import BackwardFacing from "@/components/section/BackwardFacing";
 import ServiceFront from "@/components/section/ServiceFront";
 import ServiceBack from "@/components/section/ServiceBack";
+import HomeFront from "@/components/section/HomeFront";
+import HomeBack from "@/components/section/HomeBack";
 
 export default function Home() {
   return (
@@ -25,8 +27,14 @@ export default function Home() {
         </div>
         <div className="bg-[#DADBE44D] w-full">
           <div className="flex flex-col justify-center items-center max-w-screen-xl gap-10 mx-auto w-full py-12 md:py-32">
-            <ServiceFront/>
-            <ServiceBack/>
+            <ServiceFront />
+            <ServiceBack />
+          </div>
+        </div>
+        <div className="bg-black w-full">
+          <div className="flex flex-col justify-center items-center max-w-screen-xl gap-10 mx-auto w-full py-12 md:py-32">
+            <HomeFront />
+            <HomeBack />
           </div>
         </div>
       </section>
