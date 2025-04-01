@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Navbar from "@/components/main/Navbar";
 import Form from "@/components/main/Form";
 import Image from "next/image";
@@ -7,6 +7,14 @@ import TestimonialCard from "@/components/section/TestimonialCard";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -45,8 +53,8 @@ export default function Home() {
 
   return (
     <>
-      <header className="relative h-[574px] md:h-[817px] w-full bg-[url('/main-image-dark.png')] bg-cover bg-left tracking-wide">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <header className="relative h-[574px] md:h-[817px] w-full bg-[url('/main-image-dark.png')] bg-cover bg-left tracking-wide" >
+        <div className="absolute inset-0 bg-black/20 "></div>
         <Navbar />
         <div className="max-w-screen-xl mx-auto px-6">
           <div className="relative flex justify-center items-center md:justify-between md:items-center flex-wrap h-[714px]">
@@ -89,7 +97,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="text-xl font-normal leading-8 text-white">
+            <div
+              className="text-xl font-normal leading-8 text-white"
+              ref={formRef}
+            >
               <Form />
             </div>
           </div>
@@ -307,7 +318,7 @@ export default function Home() {
               Track house construction project progress, raise queries, <br />{" "}
               view inspection reports and more.
             </div>
-            <button className="flex justify-center items-center gap-2 border border-[#D7D8E0] px-3.5 py-2 rounded-md cursor-pointer">
+            <button className="flex justify-center items-center gap-2 border border-[#D7D8E0] px-3.5 py-2 rounded-md cursor-pointer" onClick={scrollToForm}>
               GET STARTED
               <Image
                 src="/svg/vector-logo.svg"
@@ -339,7 +350,7 @@ export default function Home() {
               Take a step towards your dream home with our, Build <br /> Now Pay
               Later Program
             </div>
-            <button className="flex justify-center items-center gap-2 border border-white/50 px-3.5 py-2 rounded-md cursor-pointer">
+            <button className="flex justify-center items-center gap-2 border border-white/50 px-3.5 py-2 rounded-md cursor-pointer" onClick={scrollToForm}>
               GET STARTED
               <Image
                 src="/svg/vector-logo.svg"
@@ -822,7 +833,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center items-center pt-10">
-              <button className="bg-black flex justify-center items-center border rounded-2xl border-white py-3 px-4 lg:py-3 sm:px-3 gap-2 cursor-pointer">
+              <button className="bg-black flex justify-center items-center border rounded-2xl border-white py-3 px-4 lg:py-3 sm:px-3 gap-2 cursor-pointer" onClick={scrollToForm}>
                 <div className="text-sm md:text-md text-white">
                   BOOK CONSULTATION
                 </div>
