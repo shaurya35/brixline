@@ -29,7 +29,7 @@ export default function ServiceBack() {
           <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
           {!isLeftOpen && (
             <div
-              className="absolute bottom-5 left-30 md:left-30 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center"
+              className="absolute bottom-5 left-30 md:left-30 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center cursor-pointer"
               onClick={() => setIsLeftOpen(true)}
             >
               Turn Key Constuction
@@ -57,7 +57,7 @@ export default function ServiceBack() {
               tailored to your lifestyle.
             </p>
             <button
-              className="bg-white text-black border border-black/20 text-xs md:text-sm font-black px-2 py-1.5 md:px-3.5 md:py-2.5 rounded-lg hover:bg-gray-100 transition-colors flex justify-center items-center"
+              className="bg-white text-black border border-black/20 text-xs md:text-sm font-black px-2 py-1.5 md:px-3.5 md:py-2.5 rounded-lg hover:bg-gray-100 transition-colors flex justify-center items-center cursor-pointer"
               onClick={() => setIsLeftOpen(false)}
             >
               GET QUOTE
@@ -80,7 +80,7 @@ export default function ServiceBack() {
             height={406}
             className="hidden md:block md:w-[384px] md:h-[406px]"
           />
-          
+
           <Image
             src="/png/construction-mobile.png"
             alt="construction"
@@ -91,7 +91,7 @@ export default function ServiceBack() {
           <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
           {!isMidOpen && (
             <div
-              className="absolute bottom-5 left-30 md:left-36 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center"
+              className="absolute bottom-5 left-30 md:left-36 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center cursor-pointer"
               onClick={() => setIsMidOpen(true)}
             >
               Commercial Constructions
@@ -119,7 +119,7 @@ export default function ServiceBack() {
               retail outlets, and business hubs.
             </p>
             <button
-              className="bg-white text-black border border-black/20 text-xs md:text-sm font-black px-2 py-1.5 md:px-3.5 md:py-2.5 rounded-lg hover:bg-gray-100 transition-colors flex justify-center items-center"
+              className="bg-white text-black border border-black/20 text-xs md:text-sm font-black px-2 py-1.5 md:px-3.5 md:py-2.5 rounded-lg hover:bg-gray-100 transition-colors flex justify-center items-center cursor-pointer"
               onClick={() => setIsMidOpen(false)}
             >
               GET QUOTE
@@ -152,7 +152,7 @@ export default function ServiceBack() {
           <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
           {!isRightOpen && (
             <div
-              className="absolute bottom-5 left-30 md:left-36 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center"
+              className="absolute bottom-5 left-30 md:left-36 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center cursor-pointer"
               onClick={() => setIsRightOpen(true)}
             >
               Renovation & Remodeling
@@ -180,7 +180,7 @@ export default function ServiceBack() {
               environments with innovative solutions.
             </p>
             <button
-              className="bg-white text-black border border-black/20 text-xs md:text-sm font-black px-2 py-1.5 md:px-3.5 md:py-2.5 rounded-lg hover:bg-gray-100 transition-colors flex justify-center items-center"
+              className="bg-white text-black border border-black/20 text-xs md:text-sm font-black px-2 py-1.5 md:px-3.5 md:py-2.5 rounded-lg hover:bg-gray-100 transition-colors flex justify-center items-center cursor-pointer"
               onClick={() => setIsRightOpen(false)}
             >
               GET QUOTE
