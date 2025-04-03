@@ -146,7 +146,7 @@ export default function HomeBack() {
           </div>
         </div>
       </div>
-      <div className="block md:hidden flex-col justify-center items-center mt-6">
+      <div className="block md:hidden flex-col justify-center items-center">
         <div className="flex flex-row justify-center items-center border-b text-white/10 gap-12">
           <div className="flex flex-col justify-center items-start">
             <h3 className="text-white text-3xl">1.2 Lakh</h3>

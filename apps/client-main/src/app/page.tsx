@@ -6,6 +6,8 @@ import ServiceFront from "@/components/section/ServiceFront";
 import ServiceBack from "@/components/section/ServiceBack";
 import HomeFront from "@/components/section/HomeFront";
 import HomeBack from "@/components/section/HomeBack";
+import TestimonialFront from "@/components/section/TestimonialFront";
+import TestimonialBack from "@/components/section/TestimonialBack";
 
 export default function Home() {
   return (
@@ -36,6 +38,10 @@ export default function Home() {
             <HomeFront />
             <HomeBack />
           </div>
+        </div>
+        <div className="flex flex-col justify-center items-center max-w-screen-xl gap-10 mx-auto w-full py-12 md:py-32">
+          <TestimonialFront />
+          <TestimonialBack />
         </div>
       </section>
     </>

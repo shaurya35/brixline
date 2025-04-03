@@ -26,7 +26,7 @@ export default function ServiceBack() {
             height={320}
             className="block md:hidden w-[230px] h-[320px]"
           />
-          <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+          <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none mx-2 rounded-xl " />
           {!isLeftOpen && (
             <div
               className="absolute bottom-5 left-30 md:left-30 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center cursor-pointer"
@@ -88,7 +88,7 @@ export default function ServiceBack() {
             height={320}
             className="block md:hidden w-[230px] h-[320px]"
           />
-          <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+         <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none mx-2 rounded-xl " />
           {!isMidOpen && (
             <div
               className="absolute bottom-5 left-30 md:left-36 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center cursor-pointer"
@@ -149,7 +149,7 @@ export default function ServiceBack() {
             height={320}
             className="block md:hidden w-[230px] h-[320px]"
           />
-          <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+         <div className="absolute md:hidden inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none mx-2 rounded-xl " />
           {!isRightOpen && (
             <div
               className="absolute bottom-5 left-30 md:left-36 w-full -translate-x-1/2 text-sm md:text-lg font-bold text-white flex justify-center items-center cursor-pointer"
