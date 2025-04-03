@@ -8,6 +8,8 @@ import HomeFront from "@/components/section/HomeFront";
 import HomeBack from "@/components/section/HomeBack";
 import TestimonialFront from "@/components/section/TestimonialFront";
 import TestimonialBack from "@/components/section/TestimonialBack";
+import ProcedureFront from "@/components/section/ProcedureFront";
+import ProcedureBack from "@/components/section/ProcedureBack";
 
 export default function Home() {
   return (
@@ -34,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-black w-full">
-          <div className="flex flex-col justify-center items-center max-w-screen-xl gap-10 mx-auto w-full py-12 md:py-32">
+          <div className="flex flex-col justify-center items-center max-w-screen-xl gap-10 mx-auto w-full pt-12 md:py-32">
             <HomeFront />
             <HomeBack />
           </div>
@@ -42,6 +44,12 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center max-w-screen-xl gap-10 mx-auto w-full py-12 md:py-32">
           <TestimonialFront />
           <TestimonialBack />
+        </div>
+        <div className="bg-[#DADBE44D] w-full">
+          <div className="flex flex-col justify-center items-center max-w-screen-xl gap-10 mx-auto w-full py-12 md:py-32">
+            <ProcedureFront/>
+            <ProcedureBack />
+          </div>
         </div>
       </section>
     </>
