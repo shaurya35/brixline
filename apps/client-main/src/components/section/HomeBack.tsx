@@ -155,7 +155,7 @@ export default function HomeBack() {
           <div className="border-r rounded-2xl h-20 text-white/10 flex-shrink-0"></div>
           <div className="flex flex-col justify-center items-start">
             <h3 className="text-white text-3xl">15</h3>
-            <p className="text-[#A9ADB780] text-xs">ONGOING PROJECT</p>
+            <p className="text-[#A9ADB780] text-xs">ONGOING PROJECTS</p>
           </div>
         </div>
         <div className="flex flex-col justify-center items-start py-5 ml-4 border-b border-white/10">
