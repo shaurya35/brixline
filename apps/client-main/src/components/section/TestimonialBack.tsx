@@ -14,7 +14,7 @@ export default function TestimonialBack() {
             height={394}
             className="w-[268px] h-[394px] flex-shrink-0 object-cover rounded-xl"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none rounded-xl" />
           <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[95%] bg-white p-6 rounded-xl shadow-lg backdrop-blur-sm">
             <p className="text-sm font-light mb-4">
               &quot;As a busy working parent, I barely have time for household
@@ -35,7 +35,7 @@ export default function TestimonialBack() {
             height={513}
             className="w-[301px] h-[513px] flex-shrink-0 object-cover rounded-xl"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none rounded-xl" />
           <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[95%] bg-white p-6 rounded-xl shadow-lg backdrop-blur-sm">
             <p className="text-sm font-light mb-4">
               &quot;I was in a pinch and needed help cleaning before a
@@ -57,7 +57,7 @@ export default function TestimonialBack() {
             height={311}
             className="w-[279px] h-[311px] flex-shrink-0 object-cover rounded-xl"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none rounded-xl" />
           <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[95%] bg-white p-6 rounded-xl shadow-lg backdrop-blur-sm">
             <p className="text-sm font-light mb-4">
               &quot;I love that I don&apos;t have to pre-select services. I just
@@ -78,7 +78,7 @@ export default function TestimonialBack() {
             height={464}
             className="w-[279px] h-[464px] flex-shrink-0 object-cover rounded-xl"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none rounded-xl" />
           <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[95%] bg-white p-6 rounded-xl shadow-lg backdrop-blur-sm">
             <p className="text-sm font-light mb-4">
               &quot;Providing seamless home solutions with modern

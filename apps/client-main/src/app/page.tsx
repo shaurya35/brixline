@@ -10,6 +10,9 @@ import TestimonialFront from "@/components/section/TestimonialFront";
 import TestimonialBack from "@/components/section/TestimonialBack";
 import ProcedureFront from "@/components/section/ProcedureFront";
 import ProcedureBack from "@/components/section/ProcedureBack";
+import FaqFront from "@/components/section/FaqFront";
+import FaqBack from "@/components/section/FaqBack";
+import Footer from "@/components/footer/Footer"
 
 export default function Home() {
   return (
@@ -51,7 +54,16 @@ export default function Home() {
             <ProcedureBack />
           </div>
         </div>
+        <div className="flex flex-col justify-center items-center max-w-screen-xl gap-10 mx-auto w-full py-12 md:py-32">
+          <FaqFront /> 
+          <FaqBack />
+        </div>
       </section>
+      <footer className="bg-black w-full">
+        <div className="max-w-screen-xl mx-auto w-full py-12 md:py-32">
+          <Footer />
+        </div>
+      </footer>
     </>
   );
 }
