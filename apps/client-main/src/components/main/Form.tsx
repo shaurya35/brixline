@@ -38,7 +38,7 @@ const Form = () => {
 
   return (
     <div className="w-full lg:w-full flex items-center justify-center bg-inherit tracking-wider">
-      <div className="w-full max-w-sm xl:max-w-md bg-[linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),linear-gradient(0deg,rgba(255,255,255,0.3),rgba(255,255,255,0.3))] border border-white/20 backdrop-blur-3xl shadow-lg mx-7 md:mx-0 py-5 px-5 2xl:py-7 2xl:px-5 rounded-2xl">
+      <div className="w-full max-w-sm xl:max-w-md bg-white/20 border border-white/20 backdrop-blur-3xl shadow-lg mx-7 md:mx-0 py-5 px-5 2xl:py-7 2xl:px-5 rounded-2xl">
         <h3 className="text-center text-[#A9ADB7] text-xs md:text-sm font-bold">
           FREE CONSULTATION
         </h3>
@@ -145,7 +145,7 @@ const Form = () => {
             )}
           </button>
         </form>
-        <p className="text-center font-thin text-xs text-black md:text-[#A9ADB7] mt-3 px-9">
+        <p className="text-center font-thin text-xs text-[#A9ADB7] mt-3 px-9">
           By proceeding, you are indicating that you have read and agree to our
           <a href="#" className="font-normal underline">
             {" "}

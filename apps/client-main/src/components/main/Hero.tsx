@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <main className="relative flex justify-around items-center text-center max-w-screen-xl w-full mx-auto flex-wrap text-white mt-24 md:mt-0 gap-7">
+    <main className="relative flex justify-around items-center text-center max-w-screen-xl w-full mx-auto flex-wrap text-white mt-12 md:mt-0 gap-7">
       <div className="absolute block md:hidden top-16 right-12 sm:right-56 ">
         <Image
           src="/svg/ten-years.svg"

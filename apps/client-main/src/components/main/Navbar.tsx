@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="relative h-[71px] max-w-screen-xl w-full flex justify-between items-center lg:px-20 xl:px-20">
-      <div className="flex justify-start items-start w-28 sm:w-44">
+    <nav className="relative h-[71px] max-w-screen-xl w-80 sm:w-96 lg:w-full flex justify-between items-center lg:px-20 xl:px-20">
+      <div className="flex justify-start items-start">
         <Image
           src="/svg/brixline-logo.svg"
           alt="brixline-logo"

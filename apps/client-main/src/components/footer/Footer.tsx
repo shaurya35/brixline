@@ -38,7 +38,7 @@ export default function Footer() {
             Hire the best house <br /> construction service
           </h2>
           <p className="text-white text-sm capitalize">
-            WITH LOVE ❤️FROM BEAUTIFUL DELHI
+            WITH LOVE ❤️FROM BENGALURU
           </p>
         </div>
         <div className="block md:hidden border-b rounded-2xl w-full text-white/10 flex-shrink-0"></div>
