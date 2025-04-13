@@ -27,6 +27,11 @@ const helvetica = localFont({
 export const metadata: Metadata = {
   title: "Brixline",
   description: "Transform your business with Brixline",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+    ],
+  },
 };
 
 export default function RootLayout({
