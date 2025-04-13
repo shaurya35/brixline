@@ -59,7 +59,7 @@ export default function Footer() {
         <div className="block md:hidden border-b rounded-2xl w-full text-white/10 flex-shrink-0"></div>
         <div className="flex flex-col gap-4 text-center md:text-left w-full md:w-auto">
           <p className="text-white text-md">
-            Contact info: support@brix.com | <br /> +91-96504 36677
+            Contact info: support@brixline.in | <br /> +91-96504 36677
           </p>
           <div className="flex justify-center md:justify-start gap-5">
             {socials.map(({ platform, url }) => (
