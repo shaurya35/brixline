@@ -13,7 +13,7 @@
   --font-helvetica: "Helvetica Neue", "sans-serif";
 }
 
-h1, h2,p {
+.body {
   font-family: var(--font-helvetica);
 }
 

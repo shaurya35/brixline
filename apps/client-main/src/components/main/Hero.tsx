@@ -17,7 +17,7 @@ export default function Hero() {
         <h1 className="text-white text-5xl md:text-6xl font-black leading-13 md:leading-18 text-left">
           You <br className="block md:hidden" /> Dream, <br /> We Build.
         </h1>
-        <p className="text-md sm:text-lg leading-5 md:leading-7 opacity-60 text-left">
+        <p className="text-md sm:text-lg opacity-60 text-left">
           Your Perfect Home, Designed & Built for You.{" "}
           <br className="block xl:hidden" /> Hassle-free, On-Time,
           <br className="hidden xl:block" /> and Within Budget.
