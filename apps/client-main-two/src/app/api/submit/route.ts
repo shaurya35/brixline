@@ -1,25 +1,21 @@
-import { NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
+import { NextResponse } from "next/server";
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
   try {
-    const { name, contact, location } = await req.json();
-    
+    const { name, contact, location, email, enquiryType, enquiry } = await req.json();
+
     const submission = await prisma.user.create({
-      data: {
-        name,
-        contact,
-        location
-      }
+      data: { name , contact, location, email, enquiryType, enquiry }
     });
 
     return NextResponse.json(submission);
   } catch (error) {
-    console.error('Database error:', error);
+    console.error("Database error:", error);
     return NextResponse.json(
-      { message: 'Internal server error' },
+      { message: "Internal server error" },
       { status: 500 }
     );
   } finally {
