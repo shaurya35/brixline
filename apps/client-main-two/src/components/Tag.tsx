@@ -17,8 +17,8 @@ export const Section: React.FC<TagProps> = ({ children, className }) => {
 
 
 export const Title: React.FC<TagProps> = ({ children, className }) => {
-    const baseClasses = 'text-center font-medium clamp-title mb-4';
-    return (
+    const baseClasses = 'text-center font-medium';
+  return (
     <h2 className={`${baseClasses} ${className || ''}`}>
       {children}
     </h2>
@@ -53,7 +53,7 @@ export const Description: React.FC<TagProps> = ({ children, className }) => {
 };
 
 export const Button: React.FC<TagProps> = ({ children, className }) => {
-    const baseClasses = 'py-[20px] border h-[62px]';
+    const baseClasses = ' border';
   return (
     <button className={`${baseClasses} ${className || ''}`}>
       {children}
