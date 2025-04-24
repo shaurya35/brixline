@@ -23,6 +23,7 @@
     "@types/node": "^20.17.30",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19",
+    "@types/react-slick": "^0.23.13",
     "prisma": "^6.6.0",
     "tailwindcss": "^4",
     "typescript": "^5"
