@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import { cn } from "@/lib/utils";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,16 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const InterTight = localFont({
+  display: "swap",
+  src: [
+    {
+      path: "../../public/fonts/InterTight-Medium.ttf",
+    },
+  ],
+  variable: "--font-intertight",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +37,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={cn(
+          "min-h-screen antialiased font-intertight",
+          InterTight.className
+        )}      >
         {children}
       </body>
     </html>

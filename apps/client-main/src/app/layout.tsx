@@ -45,7 +45,6 @@ export default function RootLayout({
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={cn(
           "min-h-screen antialiased font-helvetica",
-          helvetica.className
         )}
       >
         {children}

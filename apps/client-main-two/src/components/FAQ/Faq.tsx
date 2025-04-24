@@ -31,7 +31,7 @@ const FAQ = () => {
             <SubTitle className='mb-4'>Frequently Asked Questions</SubTitle>
             <Title className='text-black'>Got Questions? We've Got <br/>Answers</Title>
         </div>
-        <div className='flex flex-col gap-4 sm:gap-10'>
+        <div className='flex flex-col gap-4 sm:gap-10 w-[85%] m-auto'>
             {
                 toggleValue.map((val,ind)=>{
                     return(
