@@ -1,5 +1,8 @@
+"use client"
+import MobileQuotePopup from './Popup';
 import { Title, SubTitle, Description, Section } from './Tag';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const packages = [
     { price: "1,760", label: "BASIC PACKAGE" },
@@ -9,6 +12,10 @@ const packages = [
 ];
 
 export default function HomePackagesSection() {
+    const [open, setOpen] = useState(false)
+    const handleClick = () => {
+        setOpen(true)
+    }
     return (
         <Section className='flex pr-0 sm:!w-full items-center gap-[10%]'>
             {/* Left Section */}
@@ -51,12 +58,14 @@ export default function HomePackagesSection() {
                                 <p className="text-sm">/sq.ft (Incl. GST)</p>
                                 <div className="mt-4 text-sm font-semibold">{pkg.label}</div>
                             </div>
+                            <div onClick={handleClick} role="button" aria-label="Open Quote Popup">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
-                                <rect y="0.5" width="30" height="30" fill="white" />
-                                <rect x="7" y="7.5" width="13" height="3" fill="#F55252" />
-                                <rect x="20" y="23.5" width="13" height="3" transform="rotate(-90 20 23.5)" fill="#F55252" />
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                                    <rect y="0.5" width="30" height="30" fill="white" />
+                                    <rect x="7" y="7.5" width="13" height="3" fill="#F55252" />
+                                    <rect x="20" y="23.5" width="13" height="3" transform="rotate(-90 20 23.5)" fill="#F55252" />
+                                </svg>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -73,7 +82,7 @@ export default function HomePackagesSection() {
             </div>
 
 
-
+            {open && <MobileQuotePopup setOpen={setOpen} />}
         </Section>
     );
 }

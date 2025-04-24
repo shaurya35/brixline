@@ -53,7 +53,7 @@ export const Description: React.FC<TagProps> = ({ children, className }) => {
 };
 
 export const Button: React.FC<TagProps> = ({ children, className }) => {
-    const baseClasses = 'py-[24px] border h-[62px]';
+    const baseClasses = 'py-[20px] border h-[62px]';
   return (
     <button className={`${baseClasses} ${className || ''}`}>
       {children}

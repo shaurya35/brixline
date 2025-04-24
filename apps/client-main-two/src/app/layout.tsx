@@ -18,7 +18,7 @@ const InterTight = localFont({
   display: "swap",
   src: [
     {
-      path: "../../public/fonts/InterTight-Medium.ttf",
+      path: "../../public/fonts/InterTight-light.ttf",
     },
   ],
   variable: "--font-intertight",
