@@ -1,12 +1,1 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.5">
-<path d="M28 8H3.99996C3.26358 8 2.66663 8.59695 2.66663 9.33333V17.3333C2.66663 18.0697 3.26358 18.6667 3.99996 18.6667H28C28.7363 18.6667 29.3333 18.0697 29.3333 17.3333V9.33333C29.3333 8.59695 28.7363 8 28 8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.6666 18.6667V28.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.33337 18.6667V28.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.6666 4V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.33337 4V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13.3333 18.6666L3.06665 8.3999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.6666 8L28.9333 18.2667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.6666 8L21.3333 18.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32"><g opacity=".5"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M28 8H3.99996C3.26358 8 2.66663 8.59695 2.66663 9.33333V17.3333C2.66663 18.0697 3.26358 18.6667 3.99996 18.6667H28C28.7363 18.6667 29.3333 18.0697 29.3333 17.3333V9.33333C29.3333 8.59695 28.7363 8 28 8Z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.6666 18.6667V28.0001"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.33337 18.6667V28.0001"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.6666 4V8"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.33337 4V8"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.3333 18.6666L3.06665 8.3999"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.6666 8L28.9333 18.2667"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.6666 8L21.3333 18.6667"/></g></svg>
