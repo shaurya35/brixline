@@ -49,7 +49,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
                         alt="dropdown"
                         width={6}
                         height={6}
-                        className="hidden md:block h-[25px] w-[25px]"
+                        className="block h-[25px] w-[25px]"
                     />
                 </div>
             </div>
