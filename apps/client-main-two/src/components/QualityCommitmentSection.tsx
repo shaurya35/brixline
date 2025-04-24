@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Section, MainTitle, SubTitle, Title, Description } from './Tag';
+import { Section, SubTitle, Title, Description } from './Tag';
 
 export default function QualityCommitmentSection() {
   return (
